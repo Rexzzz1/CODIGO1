@@ -1,0 +1,220 @@
+package pruebasenclase;
+
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class prueba1 extends javax.swing.JFrame {
+
+    
+    public prueba1() {
+        initComponents();
+         
+        agregarEventos();
+    }
+
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        TITULO = new javax.swing.JLabel();
+        txPRODUCTO = new javax.swing.JLabel();
+        txCANTIDAD = new javax.swing.JLabel();
+        txPRECIO = new javax.swing.JLabel();
+        txIMPORTE = new javax.swing.JLabel();
+        txCALCULAR = new javax.swing.JButton();
+        txNUEVO = new javax.swing.JButton();
+        txPRODUCTO1 = new javax.swing.JTextField();
+        txCANTIDAD1 = new javax.swing.JTextField();
+        txPRECIO1 = new javax.swing.JTextField();
+        txIMPORTE1 = new javax.swing.JTextField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        TITULO.setBackground(new java.awt.Color(255, 255, 204));
+        TITULO.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        TITULO.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        TITULO.setText("VENTA DE PRODUCTOS");
+        TITULO.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        TITULO.setOpaque(true);
+
+        txPRODUCTO.setText("PRODUCTO");
+
+        txCANTIDAD.setText("CANTIDAD");
+
+        txPRECIO.setText("PRECIO");
+
+        txIMPORTE.setText("IMPORTE");
+
+        txCALCULAR.setText("CALCULAR");
+
+        txNUEVO.setText("NUEVO");
+
+        txPRODUCTO1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txPRODUCTO1ActionPerformed(evt);
+            }
+        });
+
+        txIMPORTE1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txIMPORTE1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(TITULO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txPRODUCTO)
+                    .addComponent(txCANTIDAD)
+                    .addComponent(txPRECIO)
+                    .addComponent(txIMPORTE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txPRODUCTO1)
+                    .addComponent(txCANTIDAD1)
+                    .addComponent(txPRECIO1)
+                    .addComponent(txIMPORTE1, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE))
+                .addGap(51, 51, 51))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(txCALCULAR)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
+                .addComponent(txNUEVO)
+                .addGap(108, 108, 108))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(TITULO, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txPRODUCTO)
+                    .addComponent(txPRODUCTO1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txCANTIDAD)
+                    .addComponent(txCANTIDAD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txPRECIO)
+                    .addComponent(txPRECIO1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txIMPORTE)
+                    .addComponent(txIMPORTE1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txCALCULAR)
+                    .addComponent(txNUEVO))
+                .addGap(0, 63, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void txPRODUCTO1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txPRODUCTO1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txPRODUCTO1ActionPerformed
+
+    private void txIMPORTE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txIMPORTE1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txIMPORTE1ActionPerformed
+
+    private void agregarEventos() {
+        
+        txCALCULAR.addActionListener(new ActionListener() {
+            
+            public void actionPerformed(ActionEvent e) {
+                calcularImporte();
+            }
+        });
+
+        txNUEVO.addActionListener(new ActionListener() {
+            
+            public void actionPerformed(ActionEvent e) {
+                limpiar();
+            }
+        });
+    }
+    private void calcularImporte() {
+        
+            String nom = txPRODUCTO1.getText().trim();
+            
+            if (nom.isEmpty()) {
+                JOptionPane.showMessageDialog(this, 
+                    "Por favor ingrese el nombre del producto", 
+                    "Campo vacío", 
+                    JOptionPane.WARNING_MESSAGE);
+                return;
+            }   
+            int cant = Integer.parseInt(txCANTIDAD1.getText().trim());
+            double puv = Double.parseDouble(txPRECIO1.getText().trim());
+            
+            double importe = cant * puv;
+            txIMPORTE1.setText(String.format("%.2f", importe)); 
+    }
+
+    private void limpiar() {
+        // Limpiar todos los campos
+        txPRODUCTO1.setText("");
+        txCANTIDAD1.setText("");
+        txPRECIO1.setText("");
+        txIMPORTE1.setText("");
+        txPRODUCTO1.requestFocus();
+    }
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(prueba1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(prueba1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(prueba1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(prueba1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new prueba1().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel TITULO;
+    private javax.swing.JButton txCALCULAR;
+    private javax.swing.JLabel txCANTIDAD;
+    private javax.swing.JTextField txCANTIDAD1;
+    private javax.swing.JLabel txIMPORTE;
+    private javax.swing.JTextField txIMPORTE1;
+    private javax.swing.JButton txNUEVO;
+    private javax.swing.JLabel txPRECIO;
+    private javax.swing.JTextField txPRECIO1;
+    private javax.swing.JLabel txPRODUCTO;
+    private javax.swing.JTextField txPRODUCTO1;
+    // End of variables declaration//GEN-END:variables
+
+    
+}
